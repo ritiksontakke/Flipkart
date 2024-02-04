@@ -1,7 +1,7 @@
 import paytmchecksum from '../paytm/PaytmChecksum.js';
 import { paytmParams, paytmMerchantkey } from '../index.js';
-import formidable from 'formidable';
-import https from 'https';
+// import formidable from 'formidable';
+// import https from 'https';
 
 
 
@@ -19,9 +19,8 @@ export const addPaymentGateway = async (request, response) => {
 }
 
 export const paytmResponse = (request, response) => {
-  
     const form = new formidable.IncomingForm();
-    const paytmCheckSum = request.body.CHECKSUMHASH;
+    let paytmCheckSum = request.body.CHECKSUMHASH;
     delete request.body.CHECKSUMHASH;
    
     
