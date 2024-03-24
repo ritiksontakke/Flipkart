@@ -18,9 +18,7 @@ const Component = styled(Box)`
 `;
 
 const Home = () => {
-  const { products } = useSelector(() => {
-    async (state) => await state.getProducts;
-  });
+  const { products } = useSelector((state) => state.getProducts);
 
   const dispatch = useDispatch();
 
