@@ -20,7 +20,7 @@ const Component = styled(Box)`
 
 const Home = () =>{
        
-    const { products } = useSelector(state => state.getProducts)
+    const { products } = useSelector(state => state.getProducts);
 
     const dispatch = useDispatch();
 
