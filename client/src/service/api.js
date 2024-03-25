@@ -1,6 +1,7 @@
 import axios from 'axios';
+import getURL from '../helper';
 
-const URL = 'http://localhost:8000';
+const URL = getURL();
 
 export const authenticateLogin = async (data) => {
     try {
